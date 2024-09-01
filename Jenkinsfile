@@ -103,11 +103,12 @@ pipeline {
                     image 'mcr.microsoft.com/playwright:v1.39.0-jammy'
                     reuseNode true
                 }
-
-                environment{
-                    CI_ENVIRONMENT_URL = 'https://tranquil-piroshki-85dcfb.netlify.app'
-                }
             }
+
+            environment{
+                CI_ENVIRONMENT_URL = 'https://tranquil-piroshki-85dcfb.netlify.app'
+            }
+            
 
             steps {
                 sh '''
